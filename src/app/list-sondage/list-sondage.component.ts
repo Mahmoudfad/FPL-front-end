@@ -27,8 +27,6 @@ radioChangeHandler(event:any){
   console.log(this.selected);
   
 }
-
-
 sendResponse(i:any){
 
  if (this.selected =="oui") {
@@ -45,12 +43,5 @@ sendResponse(i:any){
  })
 
 }
-
-
-
-
-
-
-
 
 }
