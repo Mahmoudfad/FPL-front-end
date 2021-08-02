@@ -1,0 +1,13 @@
+<form  [formGroup]="sondageForm" >
+    <mat-form-field appearance="fill">
+        <mat-label>Titre</mat-label>
+        <input matInput formControlName="titre">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>Sujet</mat-label>
+        <input matInput formControlName="sujet">
+    </mat-form-field>
+    <div >
+        <button class="btn btn-success"  (click)="ajouter()" type="button">Add</button>
+      </div>
+</form>

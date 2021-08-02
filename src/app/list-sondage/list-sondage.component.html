@@ -1,0 +1,64 @@
+<!-- <div *ngFor="let sondage of ListSondage; let i=index">
+    <div class="card" >
+    
+        <div class="card-body">
+          <h5 class="card-title">  {{sondage.titre }}</h5>
+          <p class="card-text">{{sondage.sujet }}</p>
+          <div class="form-check">
+            <input class="form-check-input" value="yes" (change)="radioChangeHandler($event)"   type="radio" name="'flexRadioDefault'{{i}}" id="flexRadioDefault1">
+            <label class="form-check-label" for="'flexRadioDefault1'{{i}}">
+    Yes        </label>
+    <p style="font-size: 15px; color: green;">{{sondage.reponse.yes}} Personnes ont voté pour ce choix
+    </p>
+    
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" value="no" (change)="radioChangeHandler($event)" type="radio" name="'flexRadioDefault'{{i}}" id="'flexRadioDefault2'{{i}}">
+            <label class="form-check-label" for="'flexRadioDefault'{{i}}">
+    No        </label>
+    <p style="font-size: 15px; color: red;">{{sondage.reponse.no}} Personnes ont voté pour ce choix
+    </p>
+          </div>
+    
+          <button class="btn btn-primary" (click)="sendResponse(i)">Send Response</button>
+        </div>
+      </div>
+    </div> -->
+
+    <table class="table table-hover">
+        <thead>
+          <tr>
+         
+            <th scope="col">Titre</th>
+            <th scope="col">Description</th>
+            <th scope="col">Vote</th>
+            
+            
+    
+    
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let sondage of ListSondage; let i=index">
+            
+            <td>{{sondage.titre }}</td>
+            <td>{{sondage.titre }}</td>
+            <td>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" (change)="radioChangeHandler($event)" value="oui">
+                    <label class="form-check-label" for="inlineRadio1">oui </label>
+                    
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" (change)="radioChangeHandler($event)" value="non">
+                    <label class="form-check-label" for="inlineRadio2">non</label>
+                  </div>
+             
+            </td>
+            <td>   <button class="btn btn-primary" (click)="sendResponse(i)">Send Response</button> </td>
+         
+          </tr>
+         
+        </tbody>
+      </table>             
+   

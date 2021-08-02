@@ -1,0 +1,8 @@
+<nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+    <div class="G">
+        <button type="button" class="btn btn-outline-custom" routerLink="/listSondage" >Nos sondages</button>
+    <button *ngIf="authService.isLoginSubject.value == false" type="button" class="btn btn-outline-custom" routerLink="/auth">Sign in</button>
+    <button *ngIf="authService.isLoginSubject.value == true" type="button" class="btn btn-outline-custom" routerLink="/" (click)='logout()'>logout</button>
+
+</div>
+</nav>

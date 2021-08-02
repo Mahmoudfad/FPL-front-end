@@ -1,0 +1,25 @@
+.navbar {
+    display: flex;
+    justify-content:flex-end ;
+    align-content: space-between;
+    }
+    .g{
+    display: flex;
+    align-content: space-between
+    }
+    
+    .btn-custom {
+    background-color: #2751df;
+    color: white;
+    }
+    
+    .btn-outline-custom {
+    background-color: white;
+    color: #2751df;
+    border-color: #2751df;
+    }
+    
+    .btn-outline-custom:hover {
+    background-color: #2751df;
+    color: white;
+    }
